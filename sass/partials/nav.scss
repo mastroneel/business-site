@@ -1,0 +1,34 @@
+.nav-1 {
+	background-color: $main-color;
+	height: 45px;
+	padding-top: 10px;
+	ul {
+		list-style-type: none;
+		display: inline-flex;
+	}
+	.nav-1-left {
+		li {
+			padding-left: 1vw;
+			i {
+				color: $accent-color;
+				font-size: 1.6em;
+			}
+			p {
+				font-family: $secondary-font;
+				color: $secondary-font-color;
+				padding-top: 3px;
+			}
+		}
+	}
+	.nav-1-right {
+		float: right;
+		padding-right: 4vw;
+		li {
+			padding-right: 1vw;
+			a {
+				font-size: 1.6em;
+				color: $secondary-font-color;
+			}
+		}
+	}
+}
