@@ -1,0 +1,54 @@
+.card-row {
+	text-align: center;
+	padding: 10vh 0 0 0;
+	margin-left: 6vw;
+	margin-right: 5vw;
+	h1 {
+		font-family: $main-font;
+		color: $main-font-color;
+		font-size: 3.2em;
+	}
+	.card {
+		width: 25vw;
+		padding: 26px 35px;
+		border: 1px solid #d0d0d0;
+		border-radius: 3px;
+		.card-upper {
+			margin-top: 24px;
+			transition: 0.4s ease;
+			i {
+				font-size: 4em;
+				color: $accent-color;
+			}
+			.card-title {
+				font-family: $main-font;
+				color: $main-font-color;
+				font-size: 1.8em;
+			}
+		}
+		.border-container {
+			width: 50px;
+			border-bottom: 2px solid $accent-color;
+			margin: 0 auto;
+			transition: 0.4s ease;
+		}
+		.card-text {
+			font-family: $secondary-font;
+			color: $main-font-color;
+			font-size: 1.2em;
+			padding-top: 2.5vh;
+		}
+	}
+	.card:hover {
+		.card-upper {
+			margin-top: 12px;
+			margin-bottom: 22px;
+			transition: 0.4s ease;
+		}
+		.border-container {
+			width: 200px;
+			transition: 0.4s ease;
+		}
+
+	}
+}

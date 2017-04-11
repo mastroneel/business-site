@@ -1,0 +1,31 @@
+.hero {
+	height: 80vh;
+	background-image: url('../img/hero-image-9.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	font-family: $main-font;
+	color: $secondary-font-color;
+	padding-top: 15vh;
+	span {
+		color: $accent-color;
+		padding: 0 0.5vw 0 0.5vw;
+	}
+	h1 {
+		font-size: 4.5em;
+		padding-top: 6vh;
+	}
+	button {
+		background-color: $accent-color;
+		border: 1px solid $accent-color;
+		border-radius: 3px;
+		padding: 15px;
+		margin-top: 5vh;
+		font-size: 1.5em;
+	}
+	button:hover {
+		background-color: lighten($accent-color, 10%);
+		border-color: lighten($accent-color, 10%);
+		transition: 0.2s ease;
+	}
+}
