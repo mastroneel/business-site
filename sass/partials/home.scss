@@ -1,3 +1,7 @@
+// *****
+// CARDS
+// *****
+
 .card-row {
 	text-align: center;
 	padding: 10vh 0 0 0;
@@ -52,3 +56,224 @@
 
 	}
 }
+
+
+// **********
+// WHY US BOX 
+// **********
+
+.why-us {
+	height: 95vh;
+	margin-top: 10vh;
+	background-color: lighten($main-color, 70%);
+	.why-us-content {
+		height: 85vh;
+		margin-top: 5vh;
+		padding-top: 2.5%;
+		background-color: $main-color;
+		border-radius: 3px;
+		.why-us-inner {
+			height: 94%;
+			width: 95%;
+			border: 1px solid rgba(255, 255, 255, 0.2);
+			border-radius: 3px;
+			margin: 0 auto;
+			h1 {
+				text-align: center;
+				font-family: $main-font;
+				color: $secondary-font-color;
+				font-size: 3.5em;
+			}
+			.icon-ul {
+				text-align: right;
+				li {
+					margin-top: 7vh;
+				}
+			}
+			ul {
+				list-style-type: none;
+				padding: 0;
+				li {
+					margin-top: 5vh;
+					i {
+						color: $accent-color;
+						font-size: 3.7em;
+					}
+					h2 {
+						font-family: $main-font;
+						color: $secondary-font-color;
+						font-size: 1.5em;
+					}
+					p {
+						font-family: $secondary-font;
+						color: rgba(255, 255, 255, 0.5);
+					}
+				}
+			}
+			.button-row {
+				text-align: center;
+					button {
+						font-family: $main-font;
+						color: $secondary-font-color;
+						background-color: $accent-color;
+						border: 1px solid $accent-color;
+						border-radius: 3px;
+						padding: 15px;
+						margin-top: 2.5vh;
+						font-size: 1.5em;
+						transition: 0.2s ease;
+					}
+					button:hover {
+						background-color: lighten($accent-color, 10%);
+						border-color: lighten($accent-color, 10%);
+						transition: 0.2s ease;
+					}
+				}
+			}
+		}
+	}
+
+
+// ***********************
+// MEET OUR TALENTED STAFF
+// ***********************
+
+.meet-us {
+	height: 85vh;
+	.meet-us-title {
+		text-align: center;
+		padding-top: 5vh;
+		h1 {
+			font-family: $main-font;
+			color: $main-font-color;
+		}
+
+	}
+	.meet-us-content {
+		padding: 0 8.1vw;
+		.name-box {
+			position: relative;
+			text-align: center;
+			font-family: $secondary-font;
+			color: $secondary-font-color;
+			height: 18vh;
+			width: 15vw;
+			background-color: $main-color;
+			margin-top: -14vh;
+			margin-left: 3vw;
+			padding: 1vh 1vw;
+			border-radius: 2px;
+			z-index: 100;
+			h2 {
+				font-size: 1.7em;
+				font-weight: bold;
+			}
+			h3 {
+				font-size: 1.4em;
+				font-style: italic;
+				margin-top: 2.5vh;
+			}
+			.border-container {
+				width: 10vw;
+				border-bottom: 1px solid $accent-color;
+				margin: 0 auto;
+			}
+		}
+		.meet-us-1, .meet-us-2, .meet-us-3, .meet-us-4 {
+			height: 45vh;
+			width: 18vw;
+			margin: 8vh 20px 0 20px;
+			border-radius: 2px;
+			.hover-overlay {
+				// visibility: hidden;
+				-webkit-backface-visibility: hidden;
+				backface-visibility: hidden;
+				opacity: 0;
+				height: 100%;
+				width: 100%;
+				padding-top: 40%;
+				background-color: rgba(0, 0, 0, 0.5);
+				font-family: $secondary-font;
+				font-size: 1.2em;
+				text-align: center;
+				color: $secondary-font-color;
+				font-weight: bold;
+				transition: 0.2s ease-in;
+				i {
+					color: $accent-color;
+				}
+				&:hover {
+
+				}
+			}
+		}
+		.meet-us-1 {
+			background-image: url('../img/woman-1.jpg');
+			background-size: cover;
+			&:hover {
+				.hover-overlay {
+					// visibility: visible;
+					opacity: 1;
+					-webkit-transition: all 0.2s ease-in-out;
+    				-moz-transition: all 0.2s ease-in-out;
+    				-o-transition: all 0.2s ease-in-out;
+    				transition: all 0.2s ease-in-out;
+					transition: 0.2s ease-in;
+				}
+			}
+		}
+		.meet-us-2 {
+			background-image: url('../img/man-1.jpg');
+			background-size: cover;
+			&:hover {
+				.hover-overlay {
+					// visibility: visible;
+					opacity: 1;
+					-webkit-transition: all 0.2s ease-in-out;
+    				-moz-transition: all 0.2s ease-in-out;
+   					-o-transition: all 0.2s ease-in-out;
+    				transition: all 0.2s ease-in-out;
+					transition: 0.2s ease-in;
+				}
+			}
+		}
+		.meet-us-3 {
+			background-image: url('../img/woman-2.jpg');
+			background-size: cover;
+			&:hover {
+				.hover-overlay {
+					// visibility: visible;
+					opacity: 1;
+					-webkit-transition: all 0.2s ease-in-out;
+    				-moz-transition: all 0.2s ease-in-out;
+    				-o-transition: all 0.2s ease-in-out;
+    				transition: all 0.2s ease-in-out;
+					transition: 0.2s ease-in;
+				}
+			}
+		}
+		.meet-us-4 {
+			background-image: url('../img/man-2.jpg');
+			background-size: cover;
+			&:hover {
+				.hover-overlay {
+					// visibility: visible;
+					opacity: 1;
+					-webkit-transition: all 0.2s ease-in-out;
+    				-moz-transition: all 0.2s ease-in-out;
+    				-o-transition: all 0.2s ease-in-out;
+    				transition: all 0.2s ease-in-out;
+					transition: 0.2s ease-in;
+				}
+			}
+		}
+	}
+}
+
+
+// ************
+// TESTIMONIALS
+// ************
+
+
+
