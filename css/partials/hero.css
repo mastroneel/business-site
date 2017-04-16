@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$main-font".
-        on line 7 of /Users/laurenmastroni/Code/Sites/business-site/sass/partials/hero.scss
+        on line 15 of /Users/laurenmastroni/Code/Sites/business-site/sass/partials/hero.scss
 
-2: 	height: 80vh;
-3: 	background-image: url('../img/hero-image-9.jpeg');
-4: 	background-size: cover;
-5: 	background-repeat: no-repeat;
-6: 	text-align: center;
-7: 	font-family: $main-font;
-8: 	color: $secondary-font-color;
-9: 	padding-top: 15vh;
-10: 	span {
-11: 		color: $accent-color;
-12: 		padding: 0 0.5vw 0 0.5vw;
+10:       linear-gradient(rgba(37,59,88, 0.6), rgba(37,59,88, 0.6)),
+11:       url("../img/hero-image-9.jpeg");
+12: 	background-size: cover;
+13: 	background-repeat: no-repeat;
+14: 	text-align: center;
+15: 	font-family: $main-font;
+16: 	color: $secondary-font-color;
+17: 	padding-top: 15vh;
+18: 	span {
+19: 		color: $accent-color;
+20: 		padding: 0 0.5vw 0 0.5vw;
 
 Backtrace:
-/Users/laurenmastroni/Code/Sites/business-site/sass/partials/hero.scss:7
+/Users/laurenmastroni/Code/Sites/business-site/sass/partials/hero.scss:15
 /Users/laurenmastroni/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/laurenmastroni/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
 /Users/laurenmastroni/Downloads/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
@@ -62,4 +62,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$main-font\".\A         on line 7 of /Users/laurenmastroni/Code/Sites/business-site/sass/partials/hero.scss\A \A 2: 	height: 80vh;\A 3: 	background-image: url('../img/hero-image-9.jpeg');\A 4: 	background-size: cover;\A 5: 	background-repeat: no-repeat;\A 6: 	text-align: center;\A 7: 	font-family: $main-font;\A 8: 	color: $secondary-font-color;\A 9: 	padding-top: 15vh;\A 10: 	span {\A 11: 		color: $accent-color;\A 12: 		padding: 0 0.5vw 0 0.5vw;"; }
+  content: "Error: Undefined variable: \"$main-font\".\A         on line 15 of /Users/laurenmastroni/Code/Sites/business-site/sass/partials/hero.scss\A \A 10:       linear-gradient(rgba(37,59,88, 0.6), rgba(37,59,88, 0.6)),\A 11:       url(\"../img/hero-image-9.jpeg\");\A 12: 	background-size: cover;\A 13: 	background-repeat: no-repeat;\A 14: 	text-align: center;\A 15: 	font-family: $main-font;\A 16: 	color: $secondary-font-color;\A 17: 	padding-top: 15vh;\A 18: 	span {\A 19: 		color: $accent-color;\A 20: 		padding: 0 0.5vw 0 0.5vw;"; }

@@ -275,5 +275,135 @@
 // TESTIMONIALS
 // ************
 
+.testimonials {
+	height: 110vh;
+	background: 
+      -webkit-linear-gradient(rgba(37,59,88, 0.6), rgba(37,59,88, 0.6)),
+      url("../img/testimonials-1.jpg");
+  	background: 
+      -o-linear-gradient(rgba(37,59,88, 0.6), rgba(37,59,88, 0.6)),
+      url("../img/testimonials-1.jpg");
+  	background: 
+      linear-gradient(rgba(37,59,88, 0.6), rgba(37,59,88, 0.6)),
+      url("../img/testimonials-1.jpg");
+    background-size: cover;
+   	background-repeat: no-repeat;
+   	background-attachment: fixed;
+   	padding-top: 9vh;
+   	h1 {
+   		font-family: $main-font;
+   		color: $secondary-font-color;
+		text-align: center;
+		font-size: 3.5em;
+   	}
+   	.speech-row {
+   		padding: 15vh 8vw 0 8vw;
+   	}
+   	.bubble-column {
+   		padding-left: 3vw;
+   	}
+   	.speech-bubble {
+		color: $secondary-font-color;
+		font-size: 1.2em;
+		line-height: 1.5;
+		padding: 30px 40px;
+		position: relative;
+  		width: 460px;
+  		height: 270px;
+  		text-align: left;
+  		background: transparent;
+  		border-left: 2px solid #fff;
+  		border-top: 2px solid #fff;
+  		border-right: 2px solid #fff;
+  		-webkit-border-radius: 30px;
+  		-moz-border-radius: 30px;
+  		border-radius: 30px;
+  		h3 {
+  			font-family: $main-font;
+  		}
+  		p {
+  			font-family: $secondary-font;
+  			line-height: 25px;
+  			padding-left: 40px;
+  		}
+  		span {
+  			font-family: 'Coustard';
+  			color: $accent-color;
+  			font-size: 70px;
+  		}
+  		.open-quote {
+  			position: absolute;
+  			top: 60px;
+  		}
+  		.close-quote {
+  			position: absolute;
+  			bottom: 0;
+  			right: 125px;
+  		}
+   	}
+    .bottom-border-1 {
+    	height: 270px;
+    	width: 90px;
+    	margin-top: -270px;
+    	border-bottom: 2px solid #fff;
+    	border-radius: 0 0 0 28px;
+    }
+    .bottom-border-2 {
+    	height: 270px;
+    	width: 280px;
+    	margin-top: -270px;
+		margin-left: 180px;
+		border-bottom: 2px solid #fff;
+		border-radius: 0 0 28px 0;
+    }
+    .triangle {
+    	margin-left: 102px;
+    	margin-top: -33px;
+    	width: 65px;
+    	height: 65px;
+    	transform: rotate(45deg);
+    	-webkit-transform: rotate(45deg);
+    	-moz-transform: rotate(45deg);
+    	-o-transform: rotate(45deg);
+    	-ms-transform: rotate(45deg);
+   		border-right: 2px solid #fff;
+   		border-bottom: 2px solid #fff;
+   	}
+   	.client-row {
+   		padding-top: 4vh;
+		img {
+   			width: 75px;
+   		}
+   		.man {
+			margin-left: 234px;
+   		}
+   		.woman {
+   			margin-left: 124px;
+   		}
+   		h2, h3 {
+			font-family: $secondary-font;
+			font-size: 1.3em;
+			line-height: 0.5;
+   		}
+   		h2 {
+   			color: $secondary-font-color;
+   			font-weight: bold;
+   		}
+   		h3 {
+   			color: $accent-color;
+   		}
+   		.chris {
+   			position: absolute;
+   			top: -2px;
+   			right: 220px;
+   		}
+   		.michelle {
+   			position: absolute;
+   			top: -2px;
+   			right: 340px;
+   		}
+   	}
+}
+
 
 
