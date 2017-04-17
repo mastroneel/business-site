@@ -8276,7 +8276,7 @@ button.close {
         text-align: center;
         font-family: "Bitter", serif;
         color: #fff;
-        font-size: 3.5em; }
+        font-size: 3.2em; }
       .why-us .why-us-content .why-us-inner .icon-ul {
         text-align: right; }
         .why-us .why-us-content .why-us-inner .icon-ul li {
@@ -8320,7 +8320,8 @@ button.close {
     padding-top: 5vh; }
     .meet-us .meet-us-title h1 {
       font-family: "Bitter", serif;
-      color: #253b58; }
+      color: #253b58;
+      font-size: 3.2em; }
   .meet-us .meet-us-content {
     padding: 0 8.1vw; }
     .meet-us .meet-us-content .name-box {
@@ -8422,7 +8423,7 @@ button.close {
     font-family: "Bitter", serif;
     color: #fff;
     text-align: center;
-    font-size: 3.5em; }
+    font-size: 3.2em; }
   .testimonials .speech-row {
     padding: 15vh 8vw 0 8vw; }
   .testimonials .bubble-column {
@@ -8510,5 +8511,131 @@ button.close {
       position: absolute;
       top: -2px;
       right: 340px; }
+
+.blog {
+  padding-top: 10vh; }
+  .blog h1 {
+    text-align: center;
+    font-family: "Bitter", serif;
+    color: #253b58;
+    font-size: 3.5em; }
+  .blog .blog-row {
+    padding: 10vh 5vw 20vh 5vw; }
+  .blog .card {
+    width: 20vw;
+    border-radius: 3px; }
+    .blog .card img {
+      width: 100%; }
+    .blog .card .card-block {
+      border: 1px solid #d0d0d0;
+      padding: 15px; }
+      .blog .card .card-block .card-title {
+        font-family: "Bitter", serif;
+        color: #253b58;
+        font-size: 1.4em;
+        transition: 0.2s ease; }
+        .blog .card .card-block .card-title:hover {
+          color: #d69d15;
+          text-decoration: none;
+          transition: 0.2s ease; }
+      .blog .card .card-block p {
+        font-family: "Arial";
+        color: #253b58;
+        padding: 5px; }
+      .blog .card .card-block button {
+        background-color: #d69d15;
+        border: 1px solid #d69d15;
+        border-radius: 3px;
+        font-size: 1.1em;
+        font-family: "Bitter", serif;
+        color: #fff;
+        transition: 0.2s ease; }
+      .blog .card .card-block button:hover {
+        background-color: #ebb533;
+        border-color: #ebb533;
+        transition: 0.2s ease; }
+
+.footer {
+  height: 75vh;
+  background-color: #253b58; }
+  .footer .footer-row {
+    padding: 10vh 5vw; }
+    .footer .footer-row h1, .footer .footer-row h2 {
+      font-family: "Bitter", serif;
+      color: #fff; }
+      .footer .footer-row h1 span, .footer .footer-row h2 span {
+        font-family: 'Times New Roman'; }
+    .footer .footer-row p {
+      font-family: "Arial";
+      color: rgba(255, 255, 255, 0.3);
+      line-height: 1.6;
+      padding-top: 1vh;
+      padding-right: 3vw; }
+    .footer .footer-row .appointment {
+      font-family: "Arial";
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.2em;
+      transition: 0.2s ease; }
+      .footer .footer-row .appointment i {
+        color: #d69d15;
+        font-weight: bold;
+        transition: 0.2s ease; }
+      .footer .footer-row .appointment:hover {
+        color: #d69d15;
+        text-decoration: none;
+        transition: 0.2s ease; }
+        .footer .footer-row .appointment:hover i {
+          margin-left: 10px;
+          transition: 0.2s ease; }
+  .footer .quick-links-column ul {
+    display: inline-block;
+    list-style-type: none; }
+    .footer .quick-links-column ul li {
+      padding: 15px; }
+      .footer .quick-links-column ul li a {
+        font-family: "Arial";
+        color: #fff;
+        transition: 0.2s ease;
+        font-size: 1.3em; }
+        .footer .quick-links-column ul li a i {
+          color: #d69d15;
+          font-weight: bold;
+          transition: 0.2s ease; }
+        .footer .quick-links-column ul li a:hover {
+          text-decoration: none;
+          color: #d69d15;
+          transition: 0.2s ease; }
+          .footer .quick-links-column ul li a:hover i {
+            margin-left: -10px;
+            padding-right: 10px;
+            transition: 0.2s ease; }
+  .footer .contact-us-column ul {
+    list-style-type: none;
+    font-family: "Arial";
+    color: #fff;
+    font-size: 1.2em; }
+    .footer .contact-us-column ul li {
+      padding: 15px 0; }
+      .footer .contact-us-column ul li i {
+        color: #d69d15;
+        font-size: 1.4em;
+        vertical-align: bottom;
+        margin-right: 5px; }
+  .footer .footer-bottom {
+    padding: 0 5vw; }
+    .footer .footer-bottom hr {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      width: 100%; }
+    .footer .footer-bottom h2 {
+      font-family: "Arial";
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 1em;
+      float: left; }
+    .footer .footer-bottom h3 {
+      float: right; }
+      .footer .footer-bottom h3 a {
+        color: rgba(255, 255, 255, 0.3);
+        padding: 0 5px; }
 
 /*# sourceMappingURL=app.css.map */

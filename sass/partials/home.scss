@@ -82,7 +82,7 @@
 				text-align: center;
 				font-family: $main-font;
 				color: $secondary-font-color;
-				font-size: 3.5em;
+				font-size: 3.2em;
 			}
 			.icon-ul {
 				text-align: right;
@@ -146,6 +146,7 @@
 		h1 {
 			font-family: $main-font;
 			color: $main-font-color;
+			font-size: 3.2em;
 		}
 
 	}
@@ -294,7 +295,7 @@
    		font-family: $main-font;
    		color: $secondary-font-color;
 		text-align: center;
-		font-size: 3.5em;
+		font-size: 3.2em;
    	}
    	.speech-row {
    		padding: 15vh 8vw 0 8vw;
@@ -404,6 +405,181 @@
    		}
    	}
 }
+
+
+// ************
+// BLOG SECTION
+// ************
+
+.blog {
+	padding-top: 10vh;
+	h1 {
+		text-align: center;
+		font-family: $main-font;
+		color: $main-font-color;
+		font-size: 3.5em;
+	}
+	.blog-row {
+		padding: 10vh 5vw 20vh 5vw;
+	}
+	.card {
+		width: 20vw;
+		border-radius: 3px;
+		img {
+			width: 100%;
+		}
+		.card-block {
+			border: 1px solid #d0d0d0;
+			padding: 15px;
+			.card-title {
+				font-family: $main-font;
+				color: $main-font-color;
+				font-size: 1.4em;
+				transition: 0.2s ease;
+				&:hover {
+					color: $accent-color;
+					text-decoration: none;
+					transition: 0.2s ease;
+				}
+			}
+			p {
+				font-family: $secondary-font;
+				color: $main-font-color;
+				padding: 5px;
+			}
+			button {
+				background-color: $accent-color;
+				border: 1px solid $accent-color;
+				border-radius: 3px;
+				font-size: 1.1em;
+				font-family: $main-font;
+				color: $secondary-font-color;
+				transition: 0.2s ease;
+			}
+			button:hover {
+				background-color: lighten($accent-color, 10%);
+				border-color: lighten($accent-color, 10%);
+				transition: 0.2s ease;
+			}
+		}
+	}
+}
+
+
+// ******
+// FOOTER
+// ******
+
+.footer {
+	height: 75vh;
+	background-color: $main-color;
+	.footer-row {
+		padding: 10vh 5vw;
+		h1, h2 {
+			font-family: $main-font;
+			color: $secondary-font-color;
+			span {
+				font-family: 'Times New Roman';
+			}
+		}
+		p {
+			font-family: $secondary-font;
+			color: rgba(255, 255, 255, 0.3);
+			line-height: 1.6;
+			padding-top: 1vh;
+			padding-right: 3vw;
+		}
+		.appointment {
+			font-family: $secondary-font;
+			color: $secondary-font-color;
+			font-weight: bold;
+			font-size: 1.2em;
+			transition: 0.2s ease;
+			i {
+				color: $accent-color;
+				font-weight: bold;
+				transition: 0.2s ease;
+			}
+			&:hover {
+				color: $accent-color;
+				text-decoration: none;
+				transition: 0.2s ease;
+				i {
+					margin-left: 10px;
+					transition: 0.2s ease;
+				}
+			}
+		}
+	}
+	.quick-links-column {
+		ul {
+			display: inline-block;
+			list-style-type: none;
+			li {
+				padding: 15px;
+				a {
+					font-family: $secondary-font;
+					color: $secondary-font-color;
+					transition: 0.2s ease;
+					font-size: 1.3em;
+					i {
+						color: $accent-color;
+						font-weight: bold;
+						transition: 0.2s ease;
+					}
+					&:hover {
+						text-decoration: none;
+						color: $accent-color;
+						transition: 0.2s ease;
+						i {
+							margin-left: -10px;
+							padding-right: 10px;
+							transition: 0.2s ease;
+						}
+					}
+				}
+			}
+		}
+	}
+	.contact-us-column {
+		ul {
+			list-style-type: none;
+			font-family: $secondary-font;
+			color: $secondary-font-color;
+			font-size: 1.2em;
+			li {
+				padding: 15px 0;
+				i {
+					color: $accent-color;
+					font-size: 1.4em;
+					vertical-align: bottom;
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+	.footer-bottom {
+		padding: 0 5vw;
+		hr {
+			border: 1px solid rgba(255, 255, 255, 0.3);
+			width: 100%;
+		}
+		h2 {
+			font-family: $secondary-font;
+			color: rgba(255, 255, 255, 0.3);
+			font-size: 1em;
+			float: left;
+		}
+		h3 {
+			float: right;
+			a {
+				color: rgba(255, 255, 255, 0.3);
+				padding: 0 5px;
+			}
+		}
+	}
+}
+
 
 
 
