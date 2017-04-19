@@ -10,9 +10,9 @@ Error: Undefined variable: "$main-font".
 15: 	font-family: $main-font;
 16: 	color: $secondary-font-color;
 17: 	padding-top: 15vh;
-18: 	span {
-19: 		color: $accent-color;
-20: 		padding: 0 0.5vw 0 0.5vw;
+18: 	.and {
+19: 		font-family: 'Slabo 27px';
+20: 	}
 
 Backtrace:
 /Users/laurenmastroni/Code/Sites/business-site/sass/partials/hero.scss:15
@@ -62,4 +62,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$main-font\".\A         on line 15 of /Users/laurenmastroni/Code/Sites/business-site/sass/partials/hero.scss\A \A 10:       linear-gradient(rgba(37,59,88, 0.6), rgba(37,59,88, 0.6)),\A 11:       url(\"../img/hero-image-9.jpeg\");\A 12: 	background-size: cover;\A 13: 	background-repeat: no-repeat;\A 14: 	text-align: center;\A 15: 	font-family: $main-font;\A 16: 	color: $secondary-font-color;\A 17: 	padding-top: 15vh;\A 18: 	span {\A 19: 		color: $accent-color;\A 20: 		padding: 0 0.5vw 0 0.5vw;"; }
+  content: "Error: Undefined variable: \"$main-font\".\A         on line 15 of /Users/laurenmastroni/Code/Sites/business-site/sass/partials/hero.scss\A \A 10:       linear-gradient(rgba(37,59,88, 0.6), rgba(37,59,88, 0.6)),\A 11:       url(\"../img/hero-image-9.jpeg\");\A 12: 	background-size: cover;\A 13: 	background-repeat: no-repeat;\A 14: 	text-align: center;\A 15: 	font-family: $main-font;\A 16: 	color: $secondary-font-color;\A 17: 	padding-top: 15vh;\A 18: 	.and {\A 19: 		font-family: 'Slabo 27px';\A 20: 	}"; }

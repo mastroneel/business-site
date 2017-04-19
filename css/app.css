@@ -7,6 +7,7 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 @import url("https://fonts.googleapis.com/css?family=Bitter");
 @import url("https://fonts.googleapis.com/css?family=Coustard");
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -8133,7 +8134,7 @@ button.close {
   clip: auto; }
 
 .nav-1 {
-  background-color: #253b58;
+  background-color: #1c2f46;
   height: 45px;
   padding-top: 10px; }
   .nav-1 ul {
@@ -8162,30 +8163,36 @@ button.close {
 
 .nav-2 {
   background-color: #fff;
-  height: 100px; }
+  height: 90px; }
   .nav-2 ul {
     list-style-type: none;
     display: inline-flex; }
   .nav-2 .nav-2-left {
-    padding: 5px 0 0 60px; }
-    .nav-2 .nav-2-left img {
-      height: 80px; }
+    padding: 2px 0 0 60px; }
+    .nav-2 .nav-2-left li {
+      font-family: "Bitter", serif;
+      font-size: 3.5em;
+      color: #1c2f46; }
+      .nav-2 .nav-2-left li a {
+        color: #1c2f46; }
+      .nav-2 .nav-2-left li span {
+        font-family: 'Slabo 27px'; }
   .nav-2 .nav-2-right {
     float: right;
-    padding: 28px 4.5vw 0 0; }
+    padding: 22px 4.5vw 0 0; }
     .nav-2 .nav-2-right li {
       padding-left: 3vw; }
       .nav-2 .nav-2-right li a {
         font-size: 1.5em;
         font-family: "Arial";
-        color: #253b58; }
+        color: #1c2f46; }
       .nav-2 .nav-2-right li a:hover {
         text-decoration: none;
         color: #d69d15;
         transition: 0.2s ease; }
 
 .hero {
-  height: 80vh;
+  height: 90vh;
   background: -webkit-linear-gradient(rgba(37, 59, 88, 0.6), rgba(37, 59, 88, 0.6)), url("../img/hero-image-9.jpeg");
   background: -o-linear-gradient(rgba(37, 59, 88, 0.6), rgba(37, 59, 88, 0.6)), url("../img/hero-image-9.jpeg");
   background: linear-gradient(rgba(37, 59, 88, 0.6), rgba(37, 59, 88, 0.6)), url("../img/hero-image-9.jpeg");
@@ -8195,7 +8202,9 @@ button.close {
   font-family: "Bitter", serif;
   color: #fff;
   padding-top: 15vh; }
-  .hero span {
+  .hero .and {
+    font-family: 'Slabo 27px'; }
+  .hero .dash {
     color: #d69d15;
     padding: 0 0.5vw 0 0.5vw; }
   .hero h1 {
@@ -8221,7 +8230,7 @@ button.close {
   margin-right: 5vw; }
   .card-row h1 {
     font-family: "Bitter", serif;
-    color: #253b58;
+    color: #1c2f46;
     font-size: 3.2em; }
   .card-row .card {
     width: 25vw;
@@ -8236,7 +8245,7 @@ button.close {
         color: #d69d15; }
       .card-row .card .card-upper .card-title {
         font-family: "Bitter", serif;
-        color: #253b58;
+        color: #1c2f46;
         font-size: 1.8em; }
     .card-row .card .border-container {
       width: 50px;
@@ -8245,7 +8254,7 @@ button.close {
       transition: 0.4s ease; }
     .card-row .card .card-text {
       font-family: "Arial";
-      color: #253b58;
+      color: #1c2f46;
       font-size: 1.2em;
       padding-top: 2.5vh; }
   .card-row .card:hover .card-upper {
@@ -8259,12 +8268,12 @@ button.close {
 .why-us {
   height: 95vh;
   margin-top: 10vh;
-  background-color: #ebf0f7; }
+  background-color: #d8e2ef; }
   .why-us .why-us-content {
     height: 85vh;
     margin-top: 5vh;
     padding-top: 2.5%;
-    background-color: #253b58;
+    background-color: #1c2f46;
     border-radius: 3px; }
     .why-us .why-us-content .why-us-inner {
       height: 94%;
@@ -8314,13 +8323,13 @@ button.close {
           transition: 0.2s ease; }
 
 .meet-us {
-  height: 85vh; }
+  padding: 0 0 15vh 0; }
   .meet-us .meet-us-title {
     text-align: center;
     padding-top: 5vh; }
     .meet-us .meet-us-title h1 {
       font-family: "Bitter", serif;
-      color: #253b58;
+      color: #1c2f46;
       font-size: 3.2em; }
   .meet-us .meet-us-content {
     padding: 0 8.1vw; }
@@ -8331,7 +8340,7 @@ button.close {
       color: #fff;
       height: 18vh;
       width: 15vw;
-      background-color: #253b58;
+      background-color: #1c2f46;
       margin-top: -14vh;
       margin-left: 3vw;
       padding: 1vh 1vw;
@@ -8411,24 +8420,44 @@ button.close {
         transition: 0.2s ease-in; }
 
 .testimonials {
-  height: 110vh;
   background: -webkit-linear-gradient(rgba(37, 59, 88, 0.6), rgba(37, 59, 88, 0.6)), url("../img/testimonials-1.jpg");
   background: -o-linear-gradient(rgba(37, 59, 88, 0.6), rgba(37, 59, 88, 0.6)), url("../img/testimonials-1.jpg");
   background: linear-gradient(rgba(37, 59, 88, 0.6), rgba(37, 59, 88, 0.6)), url("../img/testimonials-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding-top: 9vh; }
+  padding: 9vh 0; }
   .testimonials h1 {
     font-family: "Bitter", serif;
     color: #fff;
     text-align: center;
     font-size: 3.2em; }
   .testimonials .speech-row {
-    padding: 15vh 8vw 0 8vw; }
+    padding: 5vh 8vw 0 8vw; }
   .testimonials .bubble-column {
     padding-left: 3vw; }
+    .testimonials .bubble-column img {
+      width: 75px;
+      margin-left: 97px;
+      margin-top: -15px; }
+    .testimonials .bubble-column h2, .testimonials .bubble-column h4 {
+      font-family: "Arial";
+      font-size: 1.3em;
+      float: right;
+      text-align: left;
+      margin-right: 130px; }
+    .testimonials .bubble-column h2 {
+      color: #fff;
+      font-weight: bold;
+      margin-right: 165px;
+      margin-top: -3px; }
+    .testimonials .bubble-column h4 {
+      color: #d69d15;
+      margin-top: -32px; }
+    .testimonials .bubble-column .woman {
+      margin-right: 133px; }
   .testimonials .speech-bubble {
+    margin-top: 40px;
     color: #fff;
     font-size: 1.2em;
     line-height: 1.5;
@@ -8485,53 +8514,31 @@ button.close {
     -o-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     border-right: 2px solid #fff;
-    border-bottom: 2px solid #fff; }
-  .testimonials .client-row {
-    padding-top: 4vh; }
-    .testimonials .client-row img {
-      width: 75px; }
-    .testimonials .client-row .man {
-      margin-left: 234px; }
-    .testimonials .client-row .woman {
-      margin-left: 124px; }
-    .testimonials .client-row h2, .testimonials .client-row h3 {
-      font-family: "Arial";
-      font-size: 1.3em;
-      line-height: 0.5; }
-    .testimonials .client-row h2 {
-      color: #fff;
-      font-weight: bold; }
-    .testimonials .client-row h3 {
-      color: #d69d15; }
-    .testimonials .client-row .chris {
-      position: absolute;
-      top: -2px;
-      right: 220px; }
-    .testimonials .client-row .michelle {
-      position: absolute;
-      top: -2px;
-      right: 340px; }
+    border-bottom: 2px solid #fff;
+    margin-bottom: 40px; }
 
 .blog {
   padding-top: 10vh; }
   .blog h1 {
     text-align: center;
     font-family: "Bitter", serif;
-    color: #253b58;
+    color: #1c2f46;
     font-size: 3.5em; }
   .blog .blog-row {
     padding: 10vh 5vw 20vh 5vw; }
   .blog .card {
-    width: 20vw;
-    border-radius: 3px; }
+    border-radius: 3px;
+    margin-bottom: 25px; }
     .blog .card img {
       width: 100%; }
     .blog .card .card-block {
-      border: 1px solid #d0d0d0;
+      border-left: 1px solid #d0d0d0;
+      border-right: 1px solid #d0d0d0;
+      border-bottom: 1px solid #d0d0d0;
       padding: 15px; }
       .blog .card .card-block .card-title {
         font-family: "Bitter", serif;
-        color: #253b58;
+        color: #1c2f46;
         font-size: 1.4em;
         transition: 0.2s ease; }
         .blog .card .card-block .card-title:hover {
@@ -8540,7 +8547,7 @@ button.close {
           transition: 0.2s ease; }
       .blog .card .card-block p {
         font-family: "Arial";
-        color: #253b58;
+        color: #1c2f46;
         padding: 5px; }
       .blog .card .card-block button {
         background-color: #d69d15;
@@ -8556,15 +8563,17 @@ button.close {
         transition: 0.2s ease; }
 
 .footer {
-  height: 75vh;
-  background-color: #253b58; }
+  padding: 0 0 5vh 0;
+  background-color: #1c2f46; }
   .footer .footer-row {
     padding: 10vh 5vw; }
+    .footer .footer-row .extra-space {
+      height: 60px; }
     .footer .footer-row h1, .footer .footer-row h2 {
       font-family: "Bitter", serif;
       color: #fff; }
       .footer .footer-row h1 span, .footer .footer-row h2 span {
-        font-family: 'Times New Roman'; }
+        font-family: 'Slabo 27px'; }
     .footer .footer-row p {
       font-family: "Arial";
       color: rgba(255, 255, 255, 0.3);
@@ -8637,5 +8646,277 @@ button.close {
       .footer .footer-bottom h3 a {
         color: rgba(255, 255, 255, 0.3);
         padding: 0 5px; }
+
+@media only screen and (max-width: 1100px) {
+  .testimonials .speech-row {
+    padding: 0; } }
+@media only screen and (min-width: 2101px) and (max-width: 3000px) {
+  .speech-row {
+    margin-left: 8vw; } }
+@media only screen and (min-width: 1801px) and (max-width: 2100px) {
+  .speech-row {
+    margin-left: 6vw; } }
+@media only screen and (min-width: 1651px) and (max-width: 1800px) {
+  .speech-row {
+    margin-left: 4.5vw; } }
+@media only screen and (min-width: 1370px) and (max-width: 1650px) {
+  .speech-row {
+    margin-left: 4vw; } }
+@media only screen and (min-width: 1110px) and (max-width: 1240px) {
+  .speech-row {
+    margin-left: 3vw; } }
+@media only screen and (min-width: 992px) and (max-width: 1050px) {
+  .speech-row {
+    margin-left: -20px; } }
+@media only screen and (min-width: 941px) and (max-width: 991px) {
+  .speech-row {
+    margin-left: 5.5vw; } }
+@media only screen and (min-width: 790px) and (max-width: 940px) {
+  .speech-row {
+    margin-left: 4vw; } }
+@media only screen and (min-width: 605px) and (max-width: 684px) {
+  .speech-row {
+    margin-left: 10vw; } }
+@media only screen and (min-width: 516px) and (max-width: 605px) {
+  .speech-row {
+    margin-left: 5vw; } }
+@media only screen and (min-width: 100px) and (max-width: 515px) {
+  .speech-row {
+    margin-left: 15px; } }
+@media only screen and (min-width: 2501px) {
+  .testimonials .speech-row {
+    padding-left: 0; }
+    .testimonials .speech-row .bubble-column h2 {
+      margin-right: 680px; }
+    .testimonials .speech-row .bubble-column h4 {
+      margin-top: -36px; }
+    .testimonials .speech-row .bubble-column .h4-1 {
+      margin-right: 647px; }
+    .testimonials .speech-row .bubble-column .h4-2 {
+      margin-right: 657px; }
+    .testimonials .speech-row .bubble-column .woman {
+      margin-right: 660px; } }
+@media only screen and (min-width: 2301px) and (max-width: 2500px) {
+  .testimonials .speech-row {
+    padding-left: 0; }
+    .testimonials .speech-row .bubble-column h2 {
+      margin-right: 600px; }
+    .testimonials .speech-row .bubble-column h4 {
+      margin-top: -36px; }
+    .testimonials .speech-row .bubble-column .h4-1 {
+      margin-right: 567px; }
+    .testimonials .speech-row .bubble-column .h4-2 {
+      margin-right: 577px; }
+    .testimonials .speech-row .bubble-column .woman {
+      margin-right: 580px; } }
+@media only screen and (min-width: 2101px) and (max-width: 2300px) {
+  .testimonials .speech-row {
+    padding-left: 0; }
+    .testimonials .speech-row .bubble-column h2 {
+      margin-right: 520px; }
+    .testimonials .speech-row .bubble-column h4 {
+      margin-top: -36px; }
+    .testimonials .speech-row .bubble-column .h4-1 {
+      margin-right: 487px; }
+    .testimonials .speech-row .bubble-column .h4-2 {
+      margin-right: 497px; }
+    .testimonials .speech-row .bubble-column .woman {
+      margin-right: 500px; } }
+@media only screen and (min-width: 1851px) and (max-width: 2100px) {
+  .testimonials .speech-row {
+    padding-left: 0; }
+    .testimonials .speech-row .bubble-column h2 {
+      margin-right: 440px; }
+    .testimonials .speech-row .bubble-column h4 {
+      margin-top: -36px; }
+    .testimonials .speech-row .bubble-column .h4-1 {
+      margin-right: 407px; }
+    .testimonials .speech-row .bubble-column .h4-2 {
+      margin-right: 417px; }
+    .testimonials .speech-row .bubble-column .woman {
+      margin-right: 420px; } }
+@media only screen and (min-width: 1615px) and (max-width: 1850px) {
+  .testimonials .speech-row {
+    padding-left: 0; }
+    .testimonials .speech-row .bubble-column h2 {
+      margin-right: 370px; }
+    .testimonials .speech-row .bubble-column h4 {
+      margin-top: -36px; }
+    .testimonials .speech-row .bubble-column .h4-1 {
+      margin-right: 337px; }
+    .testimonials .speech-row .bubble-column .h4-2 {
+      margin-right: 347px; }
+    .testimonials .speech-row .bubble-column .woman {
+      margin-right: 350px; } }
+@media only screen and (min-width: 1380px) and (max-width: 1615px) {
+  .testimonials .speech-row {
+    padding-left: 0; }
+    .testimonials .speech-row .bubble-column h2 {
+      margin-right: 270px; }
+    .testimonials .speech-row .bubble-column h4 {
+      margin-top: -36px; }
+    .testimonials .speech-row .bubble-column .h4-1 {
+      margin-right: 237px; }
+    .testimonials .speech-row .bubble-column .h4-2 {
+      margin-right: 247px; }
+    .testimonials .speech-row .bubble-column .woman {
+      margin-right: 250px; } }
+@media only screen and (min-width: 992px) and (max-width: 1250px) {
+  .testimonials .speech-row {
+    padding-left: 0; }
+    .testimonials .speech-row .bubble-column h2 {
+      margin-right: 150px; }
+    .testimonials .speech-row .bubble-column h4 {
+      margin-top: -36px; }
+    .testimonials .speech-row .bubble-column .h4-1 {
+      margin-right: 116px; }
+    .testimonials .speech-row .bubble-column .h4-2 {
+      margin-right: 122px; }
+    .testimonials .speech-row .bubble-column .woman {
+      margin-right: 125px; } }
+@media only screen and (min-width: 901px) and (max-width: 991px) {
+  .testimonials .speech-row .bubble-column h2 {
+    margin-right: 560px; }
+  .testimonials .speech-row .bubble-column h4 {
+    margin-top: -36px; }
+  .testimonials .speech-row .bubble-column .h4-1 {
+    margin-right: 527px; }
+  .testimonials .speech-row .bubble-column .h4-2 {
+    margin-right: 537px; }
+  .testimonials .speech-row .bubble-column .woman {
+    margin-right: 540px; } }
+@media only screen and (min-width: 866px) and (max-width: 900px) {
+  .testimonials .speech-row .bubble-column h2 {
+    margin-right: 520px; }
+  .testimonials .speech-row .bubble-column h4 {
+    margin-top: -36px; }
+  .testimonials .speech-row .bubble-column .h4-1 {
+    margin-right: 487px; }
+  .testimonials .speech-row .bubble-column .h4-2 {
+    margin-right: 497px; }
+  .testimonials .speech-row .bubble-column .woman {
+    margin-right: 500px; } }
+@media only screen and (min-width: 790px) and (max-width: 865px) {
+  .testimonials .speech-row .bubble-column h2 {
+    margin-right: 450px; }
+  .testimonials .speech-row .bubble-column h4 {
+    margin-top: -36px; }
+  .testimonials .speech-row .bubble-column .h4-1 {
+    margin-right: 417px; }
+  .testimonials .speech-row .bubble-column .h4-2 {
+    margin-right: 427px; }
+  .testimonials .speech-row .bubble-column .woman {
+    margin-right: 430px; } }
+@media only screen and (min-width: 790px) and (max-width: 991px) {
+  .testimonials .speech-row .bubble-column .speech-bubble {
+    width: 700px; }
+    .testimonials .speech-row .bubble-column .speech-bubble p {
+      font-size: 1.2em; }
+    .testimonials .speech-row .bubble-column .speech-bubble .open-quote {
+      position: absolute;
+      top: 65px; }
+    .testimonials .speech-row .bubble-column .speech-bubble .close-quote {
+      position: absolute;
+      bottom: 25px;
+      right: 465px; }
+  .testimonials .speech-row .bubble-column .bottom-border-2 {
+    width: 520px; } }
+@media only screen and (min-width: 685px) and (max-width: 789px) {
+  .testimonials .speech-row {
+    padding: 0 5vw; }
+    .testimonials .speech-row .speech-bubble {
+      width: 600px; }
+      .testimonials .speech-row .speech-bubble .open-quote {
+        position: absolute;
+        top: 65px; }
+      .testimonials .speech-row .speech-bubble .close-quote {
+        position: absolute;
+        bottom: 25px;
+        right: 385px; }
+    .testimonials .speech-row .bottom-border-2 {
+      width: 420px; } }
+@media only screen and (min-width: 746px) and (max-width: 789px) {
+  .testimonials .speech-row .bubble-column h2 {
+    margin-right: 360px; }
+  .testimonials .speech-row .bubble-column h4 {
+    margin-top: -36px; }
+  .testimonials .speech-row .bubble-column .h4-1 {
+    margin-right: 325px; }
+  .testimonials .speech-row .bubble-column .h4-2 {
+    margin-right: 336px; }
+  .testimonials .speech-row .bubble-column .woman {
+    margin-right: 340px; } }
+@media only screen and (min-width: 665px) and (max-width: 745px) {
+  .testimonials .speech-row .bubble-column h2 {
+    margin-right: 280px; }
+  .testimonials .speech-row .bubble-column h4 {
+    margin-top: -36px; }
+  .testimonials .speech-row .bubble-column .h4-1 {
+    margin-right: 245px; }
+  .testimonials .speech-row .bubble-column .h4-2 {
+    margin-right: 256px; }
+  .testimonials .speech-row .bubble-column .woman {
+    margin-right: 260px; } }
+@media only screen and (min-width: 581px) and (max-width: 664px) {
+  .testimonials .speech-row .bubble-column h2 {
+    margin-right: 248px; }
+  .testimonials .speech-row .bubble-column .h4-1 {
+    margin-right: 215px; }
+  .testimonials .speech-row .bubble-column .h4-2 {
+    margin-right: 226px; }
+  .testimonials .speech-row .bubble-column .woman {
+    margin-right: 230px; } }
+@media only screen and (min-width: 516px) and (max-width: 580px) {
+  .testimonials .speech-row .bubble-column h2 {
+    margin-right: 193px; }
+  .testimonials .speech-row .bubble-column .h4-1 {
+    margin-right: 161px; }
+  .testimonials .speech-row .bubble-column .h4-2 {
+    margin-right: 162px; }
+  .testimonials .speech-row .bubble-column .woman {
+    margin-right: 166px; } }
+@media only screen and (min-width: 444px) and (max-width: 515px) {
+  .testimonials .bubble-column h2 {
+    margin-right: 100px; }
+  .testimonials .bubble-column h4 {
+    margin-top: -36px; }
+  .testimonials .bubble-column .h4-1 {
+    margin-right: 67px; }
+  .testimonials .bubble-column .h4-2 {
+    margin-right: 78px; }
+  .testimonials .bubble-column .woman {
+    margin-right: 80px; }
+  .testimonials .bubble-column .speech-bubble {
+    width: 400px; }
+    .testimonials .bubble-column .speech-bubble .open-quote {
+      position: absolute;
+      top: 65px; }
+    .testimonials .bubble-column .speech-bubble .close-quote {
+      position: absolute;
+      bottom: -25px;
+      right: 112px; }
+  .testimonials .bubble-column .bottom-border-2 {
+    width: 220px; } }
+@media only screen and (min-width: 100px) and (max-width: 443px) {
+  .testimonials .bubble-column h2 {
+    margin-right: 60px; }
+  .testimonials .bubble-column h4 {
+    margin-top: -36px;
+    margin-right: 28px; }
+  .testimonials .bubble-column .woman {
+    margin-right: 30px; }
+  .testimonials .bubble-column .speech-bubble {
+    width: 350px;
+    font-size: 1.1em;
+    padding: 20px; }
+    .testimonials .bubble-column .speech-bubble .open-quote {
+      position: absolute;
+      top: 55px; }
+    .testimonials .bubble-column .speech-bubble .close-quote {
+      position: absolute;
+      bottom: -15px;
+      right: 90px; }
+  .testimonials .bubble-column .bottom-border-2 {
+    width: 170px; } }
 
 /*# sourceMappingURL=app.css.map */

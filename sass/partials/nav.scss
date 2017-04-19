@@ -48,20 +48,28 @@
 
 .nav-2 {
 	background-color: $secondary-color;
-	height: 100px;
+	height: 90px;
 	ul {
 		list-style-type: none;
 		display: inline-flex;
 	}
 	.nav-2-left {
-		padding: 5px 0 0 60px;
-		img {
-			height: 80px;
+		padding: 2px 0 0 60px;
+		li {
+			font-family: $main-font;
+			font-size: 3.5em;
+			color: $main-font-color;
+			a {
+				color: $main-font-color;
+			}
+			span {
+				font-family: 'Slabo 27px';
+			}
 		}
 	}
 	.nav-2-right {
 		float: right;
-		padding: 28px 4.5vw 0 0;
+		padding: 22px 4.5vw 0 0;
 		li {
 			padding-left: 3vw;
 			a {

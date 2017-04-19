@@ -1,5 +1,5 @@
 .hero {
-	height: 80vh;
+	height: 90vh;
 	background:
 	   -webkit-linear-gradient(rgba(37,59,88, 0.6), rgba(37,59,88, 0.6)),
       url("../img/hero-image-9.jpeg");
@@ -15,7 +15,10 @@
 	font-family: $main-font;
 	color: $secondary-font-color;
 	padding-top: 15vh;
-	span {
+	.and {
+		font-family: 'Slabo 27px';
+	}
+	.dash {
 		color: $accent-color;
 		padding: 0 0.5vw 0 0.5vw;
 	}

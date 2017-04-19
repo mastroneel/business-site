@@ -139,7 +139,7 @@
 // ***********************
 
 .meet-us {
-	height: 85vh;
+	padding: 0 0 15vh 0;
 	.meet-us-title {
 		text-align: center;
 		padding-top: 5vh;
@@ -277,7 +277,7 @@
 // ************
 
 .testimonials {
-	height: 110vh;
+	
 	background: 
       -webkit-linear-gradient(rgba(37,59,88, 0.6), rgba(37,59,88, 0.6)),
       url("../img/testimonials-1.jpg");
@@ -290,7 +290,7 @@
     background-size: cover;
    	background-repeat: no-repeat;
    	background-attachment: fixed;
-   	padding-top: 9vh;
+   	padding: 9vh 0;
    	h1 {
    		font-family: $main-font;
    		color: $secondary-font-color;
@@ -298,12 +298,40 @@
 		font-size: 3.2em;
    	}
    	.speech-row {
-   		padding: 15vh 8vw 0 8vw;
+   		padding: 5vh 8vw 0 8vw;
    	}
    	.bubble-column {
    		padding-left: 3vw;
+   		img {
+   			width: 75px;
+   			margin-left: 97px;
+   			margin-top: -15px;
+   			
+   		}
+   		h2, h4 {
+			font-family: $secondary-font;
+			font-size: 1.3em;
+			float: right;
+			text-align: left;
+			margin-right: 130px;
+			
+   		}
+   		h2 {
+   			color: $secondary-font-color;
+   			font-weight: bold;
+   			margin-right: 165px;
+   			margin-top: -3px;
+   		}
+   		h4 {
+   			color: $accent-color;
+   			margin-top: -32px;
+   		}
+   		.woman {
+   			margin-right: 133px;
+   		}
    	}
    	.speech-bubble {
+		margin-top: 40px;
 		color: $secondary-font-color;
 		font-size: 1.2em;
 		line-height: 1.5;
@@ -369,41 +397,42 @@
     	-ms-transform: rotate(45deg);
    		border-right: 2px solid #fff;
    		border-bottom: 2px solid #fff;
+   		margin-bottom: 40px;
    	}
-   	.client-row {
-   		padding-top: 4vh;
-		img {
-   			width: 75px;
-   		}
-   		.man {
-			margin-left: 234px;
-   		}
-   		.woman {
-   			margin-left: 124px;
-   		}
-   		h2, h3 {
-			font-family: $secondary-font;
-			font-size: 1.3em;
-			line-height: 0.5;
-   		}
-   		h2 {
-   			color: $secondary-font-color;
-   			font-weight: bold;
-   		}
-   		h3 {
-   			color: $accent-color;
-   		}
-   		.chris {
-   			position: absolute;
-   			top: -2px;
-   			right: 220px;
-   		}
-   		.michelle {
-   			position: absolute;
-   			top: -2px;
-   			right: 340px;
-   		}
-   	}
+  //  	.client-row {
+  //  		padding-top: 4vh;
+		// img {
+  //  			width: 75px;
+  //  		}
+  //  		.man {
+		// 	margin-left: 234px;
+  //  		}
+  //  		.woman {
+  //  			margin-left: 124px;
+  //  		}
+  //  		h2, h3 {
+		// 	font-family: $secondary-font;
+		// 	font-size: 1.3em;
+		// 	line-height: 0.5;
+  //  		}
+  //  		h2 {
+  //  			color: $secondary-font-color;
+  //  			font-weight: bold;
+  //  		}
+  //  		h3 {
+  //  			color: $accent-color;
+  //  		}
+  //  		.chris {
+  //  			position: absolute;
+  //  			top: -2px;
+  //  			right: 220px;
+   		// }
+   		// .michelle {
+   		// 	position: absolute;
+   		// 	top: -2px;
+   		// 	right: 340px;
+   		// }
+   	// }
 }
 
 
@@ -423,13 +452,15 @@
 		padding: 10vh 5vw 20vh 5vw;
 	}
 	.card {
-		width: 20vw;
 		border-radius: 3px;
+		margin-bottom: 25px;
 		img {
 			width: 100%;
 		}
 		.card-block {
-			border: 1px solid #d0d0d0;
+			border-left: 1px solid #d0d0d0;
+			border-right: 1px solid #d0d0d0;
+			border-bottom: 1px solid #d0d0d0;
 			padding: 15px;
 			.card-title {
 				font-family: $main-font;
@@ -471,15 +502,18 @@
 // ******
 
 .footer {
-	height: 75vh;
+	padding: 0 0 5vh 0;
 	background-color: $main-color;
 	.footer-row {
 		padding: 10vh 5vw;
+		.extra-space {
+			height: 60px;
+		}
 		h1, h2 {
 			font-family: $main-font;
 			color: $secondary-font-color;
 			span {
-				font-family: 'Times New Roman';
+				font-family: 'Slabo 27px';
 			}
 		}
 		p {
@@ -575,6 +609,587 @@
 			a {
 				color: rgba(255, 255, 255, 0.3);
 				padding: 0 5px;
+			}
+		}
+	}
+}
+
+
+// *************
+// MEDIA QUERIES
+// *************
+
+// BOOTSTRAP DEFAULT SMALL
+@media only screen and (max-width: 768px) {
+	
+
+}
+
+
+// BOOTSTRAP DEFAULT MEDIUM
+@media only screen and (max-width: 1100px) {
+	.testimonials {
+		.speech-row {
+			padding: 0;	
+		}
+	}    
+}
+
+// ***********************
+// MY CUSTOM MEDIA QUERIES
+// GROUPED BY WHAT THEY DO
+// ***********************
+
+// **********************************
+// CHANGING MARGINS OF SPEECH BUBBLES
+// LARGEST TO SMALLEST SCREENS
+// **********************************
+
+@media only screen and (min-width: 2101px) and (max-width: 3000px) {
+	.speech-row {
+		margin-left: 8vw;
+	}
+}
+
+@media only screen and (min-width: 1801px) and (max-width: 2100px) {
+	.speech-row {
+		margin-left: 6vw;
+	}
+}
+
+@media only screen and (min-width: 1651px) and (max-width: 1800px) {
+	.speech-row {
+		margin-left: 4.5vw;
+	}
+}
+
+@media only screen and (min-width: 1370px) and (max-width: 1650px) {
+	.speech-row {
+		margin-left: 4vw;
+	}
+}
+
+@media only screen and (min-width: 1110px) and (max-width: 1240px) {
+	.speech-row {
+		margin-left: 3vw;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1050px) {
+	.speech-row {
+		margin-left: -20px;
+	}
+}
+
+@media only screen and (min-width: 941px) and (max-width: 991px) {
+	.speech-row {
+		margin-left: 5.5vw;
+	}
+}
+
+@media only screen and (min-width: 790px) and (max-width: 940px) {
+	.speech-row {
+		margin-left: 4vw;
+	}
+}
+
+@media only screen and (min-width: 605px) and (max-width: 684px) {
+	.speech-row {
+			margin-left: 10vw;
+		}
+}
+
+@media only screen and (min-width: 516px) and (max-width: 605px) {
+	.speech-row {
+			margin-left: 5vw;
+		}
+}
+
+@media only screen and (min-width: 100px) and (max-width: 515px) {
+	.speech-row {
+		margin-left: 15px;
+	}
+}
+
+
+// *********************************
+// CHANGING SIZE OF SPEECH BUBBLES,
+// CAPTIONS (NAME AND TITLE),
+// AND POSITION OF QUOTATIONS MARKS
+// LARGEST TO SMALLEST SCREENS
+// *********************************
+
+
+
+// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
+@media only screen and (min-width: 2501px) {
+	.testimonials {
+		.speech-row {
+			padding-left: 0;
+			.bubble-column {
+				h2 {
+   					margin-right: 680px;
+   				}
+   				h4 {
+   					margin-top: -36px;
+   				}
+   				.h4-1 {
+   					margin-right: 647px;
+   				}
+   				.h4-2 {
+   					margin-right: 657px;
+   				}
+   				.woman {
+   					margin-right: 660px;
+   				}
+   			}
+   		}
+   	}
+}
+
+// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
+@media only screen and (min-width: 2301px) and (max-width: 2500px) {
+	.testimonials {
+		.speech-row {
+			padding-left: 0;
+			.bubble-column {
+				h2 {
+   					margin-right: 600px;
+   				}
+   				h4 {
+   					margin-top: -36px;
+   				}
+   				.h4-1 {
+   					margin-right: 567px;
+   				}
+   				.h4-2 {
+   					margin-right: 577px;
+   				}
+   				.woman {
+   					margin-right: 580px;
+   				}
+   			}
+   		}
+   	}
+}
+
+// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
+@media only screen and (min-width: 2101px) and (max-width: 2300px) {
+	.testimonials {
+		.speech-row {
+			padding-left: 0;
+			.bubble-column {
+				h2 {
+   					margin-right: 520px;
+   				}
+   				h4 {
+   					margin-top: -36px;
+   				}
+   				.h4-1 {
+   					margin-right: 487px;
+   				}
+   				.h4-2 {
+   					margin-right: 497px;
+   				}
+   				.woman {
+   					margin-right: 500px;
+   				}
+   			}
+   		}
+   	}
+}
+
+// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
+@media only screen and (min-width: 1851px) and (max-width: 2100px) {
+	.testimonials {
+		.speech-row {
+			padding-left: 0;
+			.bubble-column {
+				h2 {
+   					margin-right: 440px;
+   				}
+   				h4 {
+   					margin-top: -36px;
+   				}
+   				.h4-1 {
+   					margin-right: 407px;
+   				}
+   				.h4-2 {
+   					margin-right: 417px;
+   				}
+   				.woman {
+   					margin-right: 420px;
+   				}
+   			}
+   		}
+   	}
+}
+
+// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
+@media only screen and (min-width: 1615px) and (max-width: 1850px) {
+	.testimonials {
+		.speech-row {
+			padding-left: 0;
+			.bubble-column {
+				h2 {
+   					margin-right: 370px;
+   				}
+   				h4 {
+   					margin-top: -36px;
+   				}
+   				.h4-1 {
+   					margin-right: 337px;
+   				}
+   				.h4-2 {
+   					margin-right: 347px;
+   				}
+   				.woman {
+   					margin-right: 350px;
+   				}
+   			}
+   		}
+   	}
+}
+
+
+// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
+@media only screen and (min-width: 1380px) and (max-width: 1615px) {
+	.testimonials {
+		.speech-row {
+			padding-left: 0;
+			.bubble-column {
+				h2 {
+   					margin-right: 270px;
+   				}
+   				h4 {
+   					margin-top: -36px;
+   				}
+   				.h4-1 {
+   					margin-right: 237px;
+   				}
+   				.h4-2 {
+   					margin-right: 247px;
+   				}
+   				.woman {
+   					margin-right: 250px;
+   				}
+   			}
+   		}
+   	}
+}
+
+// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
+@media only screen and (min-width: 992px) and (max-width: 1250px) {
+	.testimonials {
+		.speech-row {
+			padding-left: 0;
+			.bubble-column {
+				h2 {
+   					margin-right: 150px;
+   				}
+   				h4 {
+   					margin-top: -36px;
+   				}
+   				.h4-1 {
+   					margin-right: 116px;
+   				}
+   				.h4-2 {
+   					margin-right: 122px;
+   				}
+   				.woman {
+   					margin-right: 125px;
+   				}
+   			}
+   		}
+   	}
+}
+
+// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
+@media only screen and (min-width: 901px) and (max-width: 991px) {
+	.testimonials {
+		.speech-row {
+			.bubble-column {
+				h2 {
+   					margin-right: 560px;
+   				}
+   				h4 {
+   					margin-top: -36px;
+   				}
+   				.h4-1 {
+   					margin-right: 527px;
+   				}
+   				.h4-2 {
+   					margin-right: 537px;
+   				}
+   				.woman {
+   					margin-right: 540px;
+   				}
+   			}
+   		}
+   	}
+}
+
+// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
+@media only screen and (min-width: 866px) and (max-width: 900px) {
+	.testimonials {
+		.speech-row {
+			.bubble-column {
+				h2 {
+   					margin-right: 520px;
+   				}
+   				h4 {
+   					margin-top: -36px;
+   				}
+   				.h4-1 {
+   					margin-right: 487px;
+   				}
+   				.h4-2 {
+   					margin-right: 497px;
+   				}
+   				.woman {
+   					margin-right: 500px;
+   				}
+   			}
+   		}
+   	}
+}
+
+// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
+@media only screen and (min-width: 790px) and (max-width: 865px) {
+	.testimonials {
+		.speech-row {
+			.bubble-column {
+				h2 {
+   					margin-right: 450px;
+   				}
+   				h4 {
+   					margin-top: -36px;
+   				}
+   				.h4-1 {
+   					margin-right: 417px;
+   				}
+   				.h4-2 {
+   					margin-right: 427px;
+   				}
+   				.woman {
+   					margin-right: 430px;
+   				}
+   			}
+   		}
+   	}
+}
+ 
+
+@media only screen and (min-width: 790px) and (max-width: 991px) {
+	.testimonials {
+		.speech-row {
+			.bubble-column {
+				.speech-bubble {
+					width: 700px;
+					p {
+						font-size: 1.2em;
+					}
+					.open-quote {
+  						position: absolute;
+  						top: 65px;
+  					}
+  					.close-quote {
+  						position: absolute;
+  						bottom: 25px;
+  						right: 465px;
+  					}
+				}
+				.bottom-border-2 {
+					width: 520px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 685px) and (max-width: 789px) {
+	.testimonials {
+		.speech-row {
+			padding: 0 5vw;
+			.speech-bubble {
+				width: 600px;
+				.open-quote {
+  					position: absolute;
+  					top: 65px;
+  				}
+  				.close-quote {
+  					position: absolute;
+  					bottom: 25px;
+  					right: 385px;
+  				}
+			}
+			.bottom-border-2 {
+				width: 420px;
+			}
+		}
+	}
+}
+
+
+// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
+@media only screen and (min-width: 746px) and (max-width: 789px) {
+	.testimonials {
+		.speech-row {
+			.bubble-column {
+				h2 {
+   					margin-right: 360px;
+   				}
+   				h4 {
+   					margin-top: -36px;
+   				}
+   				.h4-1 {
+   					margin-right: 325px;
+   				}
+   				.h4-2 {
+   					margin-right: 336px;
+   				}
+   				.woman {
+   					margin-right: 340px;
+   				} 
+   			}
+   		}
+   	}
+}
+
+// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
+@media only screen and (min-width: 665px) and (max-width: 745px) {
+	.testimonials {
+		.speech-row {
+			.bubble-column {
+				h2 {
+   					margin-right: 280px;
+   				}
+   				h4 {
+   					margin-top: -36px;
+   				}
+   				.h4-1 {
+   					margin-right: 245px;
+   				}
+   				.h4-2 {
+   					margin-right: 256px;
+   				}
+   				.woman {
+   					margin-right: 260px;
+   				} 
+   			}
+   		}
+   	}
+}
+
+// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
+@media only screen and (min-width: 581px) and (max-width: 664px) {
+	.testimonials {
+		.speech-row {
+			.bubble-column {
+				h2 {
+   					margin-right: 248px;
+   				}
+   				.h4-1 {
+   					margin-right: 215px;
+   				}
+   				.h4-2 {
+   					margin-right: 226px;
+   				}
+   				.woman {
+   					margin-right: 230px;
+   				} 
+   			}
+   		}
+   	}
+}
+
+@media only screen and (min-width: 516px) and (max-width: 580px) {
+	.testimonials {
+		.speech-row {
+			.bubble-column {
+				h2 {
+   					margin-right: 193px;
+   				}
+   				.h4-1 {
+   					margin-right: 161px;
+   				}
+   				.h4-2 {
+   					margin-right: 162px;
+   				}
+   				.woman {
+   					margin-right: 166px;
+   				} 
+   			}
+   		}
+   	}
+}
+
+@media only screen and (min-width: 444px) and (max-width: 515px) {
+	.testimonials {
+			.bubble-column {
+				h2 {
+   					margin-right: 100px;
+   				}
+   				h4 {
+   					margin-top: -36px;
+   				}
+   				.h4-1 {
+   					margin-right: 67px;
+   				}
+   				.h4-2 {
+   					margin-right: 78px;
+   				}
+   				.woman {
+   					margin-right: 80px;
+   				}
+				.speech-bubble {
+					width: 400px;
+					.open-quote {
+  						position: absolute;
+  						top: 65px;
+  					}
+  					.close-quote {
+  						position: absolute;
+  						bottom: -25px;
+  						right: 112px;
+  					}
+				}
+				.bottom-border-2 {
+					width: 220px;
+				}
+			}
+		}	
+}
+
+@media only screen and (min-width: 100px) and (max-width: 443px) {
+	.testimonials {
+		.bubble-column {
+   			h2 {
+   				margin-right: 60px;
+   			}
+   			h4 {
+   				margin-top: -36px;
+   				margin-right: 28px;
+   			}
+   			.woman {
+   				margin-right: 30px;
+   			}
+   			.speech-bubble {
+				width: 350px;
+				font-size: 1.1em;
+				padding: 20px;
+  				.open-quote {
+  					position: absolute;
+  					top: 55px;
+  				}
+  				.close-quote {
+  					position: absolute;
+					bottom: -15px;
+  					right: 90px;
+  				}
+			}
+			.bottom-border-2 {
+				width: 170px;
 			}
 		}
 	}
