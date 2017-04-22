@@ -63,17 +63,18 @@
 // **********
 
 .why-us {
-	height: 95vh;
+	height: 910px;
+	padding-top: 75px;
 	margin-top: 10vh;
 	background-color: lighten($main-color, 70%);
 	.why-us-content {
-		height: 85vh;
-		margin-top: 5vh;
-		padding-top: 2.5%;
+		height: 650px;
+		margin-top: 30px;
+		padding-top: 30px;
 		background-color: $main-color;
 		border-radius: 3px;
 		.why-us-inner {
-			height: 94%;
+			height: 590px;
 			width: 95%;
 			border: 1px solid rgba(255, 255, 255, 0.2);
 			border-radius: 3px;
@@ -85,9 +86,10 @@
 				font-size: 3.2em;
 			}
 			.icon-ul {
-				text-align: right;
+				text-align: center;
 				li {
-					margin-top: 7vh;
+					margin-top: 60px;
+					margin-left: -20px;
 				}
 			}
 			ul {
@@ -139,7 +141,6 @@
 // ***********************
 
 .meet-us {
-	padding: 0 0 15vh 0;
 	.meet-us-title {
 		text-align: center;
 		padding-top: 5vh;
@@ -151,17 +152,18 @@
 
 	}
 	.meet-us-content {
-		padding: 0 8.1vw;
+		padding: 0 3vw;
+		margin-bottom: 15vh;
 		.name-box {
 			position: relative;
 			text-align: center;
 			font-family: $secondary-font;
 			color: $secondary-font-color;
-			height: 18vh;
-			width: 15vw;
+			height: 140px;
+			width: 234px;
 			background-color: $main-color;
-			margin-top: -14vh;
-			margin-left: 3vw;
+			margin-top: -100px;
+			margin-left: 22px;
 			padding: 1vh 1vw;
 			border-radius: 2px;
 			z-index: 100;
@@ -175,18 +177,17 @@
 				margin-top: 2.5vh;
 			}
 			.border-container {
-				width: 10vw;
+				width: 90px;
 				border-bottom: 1px solid $accent-color;
 				margin: 0 auto;
 			}
 		}
 		.meet-us-1, .meet-us-2, .meet-us-3, .meet-us-4 {
-			height: 45vh;
-			width: 18vw;
-			margin: 8vh 20px 0 20px;
+			height: 370px;
+			width: 276px;
+			margin-top: 8vh;
 			border-radius: 2px;
 			.hover-overlay {
-				// visibility: hidden;
 				-webkit-backface-visibility: hidden;
 				backface-visibility: hidden;
 				opacity: 0;
@@ -213,7 +214,6 @@
 			background-size: cover;
 			&:hover {
 				.hover-overlay {
-					// visibility: visible;
 					opacity: 1;
 					-webkit-transition: all 0.2s ease-in-out;
     				-moz-transition: all 0.2s ease-in-out;
@@ -399,40 +399,6 @@
    		border-bottom: 2px solid #fff;
    		margin-bottom: 40px;
    	}
-  //  	.client-row {
-  //  		padding-top: 4vh;
-		// img {
-  //  			width: 75px;
-  //  		}
-  //  		.man {
-		// 	margin-left: 234px;
-  //  		}
-  //  		.woman {
-  //  			margin-left: 124px;
-  //  		}
-  //  		h2, h3 {
-		// 	font-family: $secondary-font;
-		// 	font-size: 1.3em;
-		// 	line-height: 0.5;
-  //  		}
-  //  		h2 {
-  //  			color: $secondary-font-color;
-  //  			font-weight: bold;
-  //  		}
-  //  		h3 {
-  //  			color: $accent-color;
-  //  		}
-  //  		.chris {
-  //  			position: absolute;
-  //  			top: -2px;
-  //  			right: 220px;
-   		// }
-   		// .michelle {
-   		// 	position: absolute;
-   		// 	top: -2px;
-   		// 	right: 340px;
-   		// }
-   	// }
 }
 
 
@@ -637,11 +603,242 @@
 
 // ***********************
 // MY CUSTOM MEDIA QUERIES
-// GROUPED BY WHAT THEY DO
+// GROUPED BY SECTION AND
+// WHAT THEY DO
 // ***********************
 
+// *********************
+// WHY CHOOSE US SECTION
+// *********************
+
+@media only screen and (min-width: 1060px) and (max-width: 2600px) {
+	.why-us {
+		.why-us-content {
+			.why-us-inner {
+				padding-top: 40px;
+			}
+		}
+	}
+}
+
+
+@media only screen and (min-width: 556px) and (max-width: 990px) {
+	.why-us {
+		.why-us-content {
+			.why-us-inner {
+				padding: 12px 30px 12px 0;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 555px) {
+	.why-us {
+		.why-us-content {
+			.why-us-inner {
+				padding: 10px;
+				h1 {
+					font-size: 2.4em;
+				}
+				.icon-ul {
+					li {
+						margin-top: 60px;
+						margin-left: -40px;
+					}
+				}
+				ul {
+					li {
+						margin-top: 10px;
+						i {
+							font-size: 3em;
+						}
+						h2 {
+							font-size: 1.3em;
+						}
+					}
+				}
+				.button-row {
+					button {
+						padding: 12px;
+						margin-top: 18px;
+						font-size: 1.3em;
+					}
+				}
+			}
+		}
+	}
+}
+
+// *******************************
+// MEET OUR TALENTED STAFF SECTION
+// *******************************
+
+// *******************************
+// CHANGES PADDING AROUND PICTURE
+// AND NAME BOX DIVS - LARGEST
+// TO SMALLEST SCREENS
+// *******************************
+
+@media only screen and (min-width: 2225px) and (max-width: 2500px) {
+	.meet-us {
+		.meet-us-content {
+			padding: 0 10vw 0 16vw;
+		}
+	}
+}
+
+@media only screen and (min-width: 1840px) and (max-width: 2225px) {
+	.meet-us {
+		.meet-us-content {
+			padding: 0 10vw 0 13.5vw;
+		}
+	}
+}
+
+@media only screen and (min-width: 1026px) and (max-width: 1199px) {
+	.meet-us {
+		.meet-us-content {
+			padding: 0 10vw 0 19.5vw;
+		}
+	}
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1025px) {
+	.meet-us {
+		.meet-us-content {
+			padding: 0 10vw 0 17.5vw;
+		}
+	}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 959px) {
+	.meet-us {
+		.meet-us-content {
+			padding: 0 10vw 0 16.5vw;
+		}
+	}
+}
+
+@media only screen and (min-width: 850px) and (max-width: 899px) {
+	.meet-us {
+		.meet-us-content {
+			padding: 0 10vw 0 15vw;
+		}
+	}
+}
+
+@media only screen and (min-width: 810px) and (max-width: 849px) {
+	.meet-us {
+		.meet-us-content {
+			padding: 0 10vw 0 14vw;
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 809px) {
+	.meet-us {
+		.meet-us-content {
+			padding: 0 10vw 0 12.5vw;
+		}
+	}
+}
+
+@media only screen and (min-width: 715px) and (max-width: 767px) {
+	.meet-us {
+		.meet-us-content {
+			padding: 0 10vw 0 31vw;
+		}
+	}
+}
+
+@media only screen and (min-width: 685px) and (max-width: 714px) {
+	.meet-us {
+		.meet-us-content {
+			padding: 0 10vw 0 30vw;
+		}
+	}
+}
+
+@media only screen and (min-width: 630px) and (max-width: 684px) {
+	.meet-us {
+		.meet-us-content {
+			padding: 0 10vw 0 29vw;
+		}
+	}
+}
+
+@media only screen and (min-width: 610px) and (max-width: 629px) {
+	.meet-us {
+		.meet-us-content {
+			padding: 0 10vw 0 27vw;
+		}
+	}
+}
+
+@media only screen and (min-width: 575px) and (max-width: 609px) {
+	.meet-us {
+		.meet-us-content {
+			padding: 0 10vw 0 24vw;
+		}
+	}
+}
+
+@media only screen and (min-width: 510px) and (max-width: 574px) {
+	.meet-us {
+		.meet-us-content {
+			padding: 0 10vw 0 22vw;
+		}
+	}
+}
+
+@media only screen and (min-width: 476px) and (max-width: 509px) {
+	.meet-us {
+		.meet-us-content {
+			padding: 0 10vw 0 20vw;
+		}
+	}
+}
+
+@media only screen and (min-width: 455px) and (max-width: 475px) {
+	.meet-us {
+		.meet-us-content {
+			padding: 0 10vw 0 18vw;
+		}
+	}
+}
+
+@media only screen and (min-width: 430px) and (max-width: 454px) {
+	.meet-us {
+		.meet-us-content {
+			padding: 0 10vw 0 16vw;
+		}
+	}
+}
+
+@media only screen and (min-width: 415px) and (max-width: 429px) {
+	.meet-us {
+		.meet-us-content {
+			padding: 0 10vw 0 14vw;
+		}
+	}
+}
+
+@media only screen and (min-width: 390px) and (max-width: 414px) {
+	.meet-us {
+		.meet-us-content {
+			padding: 0 10vw 0 12vw;
+		}
+	}
+}
+
+
+
+// ********************
+// TESTIMONIALS SECTION
+// ********************
+
 // **********************************
-// CHANGING MARGINS OF SPEECH BUBBLES
+// CHANGES MARGINS OF SPEECH BUBBLES
 // LARGEST TO SMALLEST SCREENS
 // **********************************
 
@@ -669,7 +866,7 @@
 	}
 }
 
-@media only screen and (min-width: 1110px) and (max-width: 1240px) {
+@media only screen and (min-width: 1110px) and (max-width: 1250px) {
 	.speech-row {
 		margin-left: 3vw;
 	}
@@ -713,15 +910,12 @@
 
 
 // *********************************
-// CHANGING SIZE OF SPEECH BUBBLES,
+// CHANGES SIZE OF SPEECH BUBBLES,
 // CAPTIONS (NAME AND TITLE),
 // AND POSITION OF QUOTATIONS MARKS
 // LARGEST TO SMALLEST SCREENS
 // *********************************
 
-
-
-// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
 @media only screen and (min-width: 2501px) {
 	.testimonials {
 		.speech-row {
@@ -747,7 +941,6 @@
    	}
 }
 
-// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
 @media only screen and (min-width: 2301px) and (max-width: 2500px) {
 	.testimonials {
 		.speech-row {
@@ -773,7 +966,6 @@
    	}
 }
 
-// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
 @media only screen and (min-width: 2101px) and (max-width: 2300px) {
 	.testimonials {
 		.speech-row {
@@ -799,7 +991,6 @@
    	}
 }
 
-// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
 @media only screen and (min-width: 1851px) and (max-width: 2100px) {
 	.testimonials {
 		.speech-row {
@@ -825,7 +1016,6 @@
    	}
 }
 
-// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
 @media only screen and (min-width: 1615px) and (max-width: 1850px) {
 	.testimonials {
 		.speech-row {
@@ -851,8 +1041,6 @@
    	}
 }
 
-
-// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
 @media only screen and (min-width: 1380px) and (max-width: 1615px) {
 	.testimonials {
 		.speech-row {
@@ -878,7 +1066,6 @@
    	}
 }
 
-// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
 @media only screen and (min-width: 992px) and (max-width: 1250px) {
 	.testimonials {
 		.speech-row {
@@ -904,7 +1091,6 @@
    	}
 }
 
-// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
 @media only screen and (min-width: 901px) and (max-width: 991px) {
 	.testimonials {
 		.speech-row {
@@ -929,7 +1115,6 @@
    	}
 }
 
-// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
 @media only screen and (min-width: 866px) and (max-width: 900px) {
 	.testimonials {
 		.speech-row {
@@ -954,7 +1139,6 @@
    	}
 }
 
-// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
 @media only screen and (min-width: 790px) and (max-width: 865px) {
 	.testimonials {
 		.speech-row {
@@ -1030,8 +1214,6 @@
 	}
 }
 
-
-// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
 @media only screen and (min-width: 746px) and (max-width: 789px) {
 	.testimonials {
 		.speech-row {
@@ -1056,7 +1238,6 @@
    	}
 }
 
-// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
 @media only screen and (min-width: 665px) and (max-width: 745px) {
 	.testimonials {
 		.speech-row {
@@ -1081,7 +1262,6 @@
    	}
 }
 
-// CHANGES LOCATION OF IMAGE CAPTIONS ONLY
 @media only screen and (min-width: 581px) and (max-width: 664px) {
 	.testimonials {
 		.speech-row {
