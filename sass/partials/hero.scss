@@ -42,3 +42,77 @@
 		transition: 0.2s ease;
 	}
 }
+
+
+// *************
+// MEDIA QUERIES
+// *************
+
+@media only screen and (min-width: 510px) and (max-width: 766px) {
+	.hero {
+		height: 90vh;
+		min-height: 642px;
+		padding-top: 15vh;
+		background-attachment: scroll;
+		h1 {
+			font-size: 4em;
+			padding-top: 6vh;
+		}
+		h2 {
+			font-size: 2em;
+		}
+		button {
+			padding: 15px;
+			margin-top: 5vh;
+			font-size: 1.5em;
+		}
+	}
+}
+
+@media only screen and (min-width: 440px) and (max-width: 509px) {
+	.hero {
+		height: 90vh;
+		min-height: 615px;
+		padding-top: 18vh;
+		background-attachment: scroll;
+		h1 {
+			font-size: 3.3em;
+			padding-top: 6vh;
+		}
+		h2 {
+			font-size: 1.5em;
+		}
+		button {
+			padding: 15px;
+			margin-top: 5vh;
+			font-size: 1.5em;
+		}
+	}
+}
+
+@media only screen and (min-width: 200px) and (max-width: 439px) {
+	.hero {
+		height: 90vh;
+		min-height: 615px;
+		padding-top: 22vh;
+		background-attachment: scroll;
+		h1 {
+			font-size: 3.3em;
+			padding-top: 6vh;
+		}
+		h2 {
+			font-size: 1.3em;
+		}
+		button {
+			padding: 15px;
+			margin-top: 5vh;
+			font-size: 1.5em;
+		}
+	}
+}
+
+
+
+
+
+

@@ -8191,6 +8191,69 @@ button.close {
         color: #d69d15;
         transition: 0.2s ease; }
 
+@media only screen and (max-width: 1050px) {
+  .nav-1 {
+    display: none; }
+
+  .nav-2 .nav-2-left {
+    display: none; }
+  .nav-2 .nav-2-right {
+    float: left; } }
+@media only screen and (max-width: 715px) {
+  .nav-1 {
+    display: none; }
+
+  .nav-2 {
+    height: 75px; }
+    .nav-2 .nav-2-left {
+      display: none; }
+    .nav-2 .nav-2-right {
+      float: left;
+      padding-top: 22px; }
+      .nav-2 .nav-2-right li {
+        font-size: 0.9em; } }
+@media only screen and (max-width: 535px) {
+  .nav-1 {
+    display: none; }
+
+  .nav-2 {
+    height: 65px;
+    opacity: 0.9;
+    position: fixed;
+    width: 100%;
+    z-index: 200; }
+    .nav-2 .nav-2-left {
+      display: none; }
+    .nav-2 .nav-2-right {
+      float: left;
+      padding: 22px 0 0 15px;
+      margin-left: -25px; }
+      .nav-2 .nav-2-right li {
+        font-size: 0.75em;
+        color: #1c2f46; }
+        .nav-2 .nav-2-right li i {
+          display: none; } }
+@media only screen and (max-width: 375px) {
+  .nav-1 {
+    display: none; }
+
+  .nav-2 {
+    height: 65px;
+    opacity: 0.9;
+    position: fixed;
+    width: 100%;
+    z-index: 200; }
+    .nav-2 .nav-2-left {
+      display: none; }
+    .nav-2 .nav-2-right {
+      float: left;
+      padding: 22px 0 0 15px;
+      margin-left: -25px; }
+      .nav-2 .nav-2-right li {
+        font-size: 0.6em;
+        color: #1c2f46; }
+        .nav-2 .nav-2-right li i {
+          display: none; } }
 .hero {
   height: 90vh;
   background: -webkit-linear-gradient(rgba(37, 59, 88, 0.6), rgba(37, 59, 88, 0.6)), url("../img/hero-image-9.jpeg");
@@ -8224,20 +8287,74 @@ button.close {
     border-color: #ebb533;
     transition: 0.2s ease; }
 
+@media only screen and (min-width: 510px) and (max-width: 766px) {
+  .hero {
+    height: 90vh;
+    min-height: 642px;
+    padding-top: 15vh;
+    background-attachment: scroll; }
+    .hero h1 {
+      font-size: 4em;
+      padding-top: 6vh; }
+    .hero h2 {
+      font-size: 2em; }
+    .hero button {
+      padding: 15px;
+      margin-top: 5vh;
+      font-size: 1.5em; } }
+@media only screen and (min-width: 440px) and (max-width: 509px) {
+  .hero {
+    height: 90vh;
+    min-height: 615px;
+    padding-top: 18vh;
+    background-attachment: scroll; }
+    .hero h1 {
+      font-size: 3.3em;
+      padding-top: 6vh; }
+    .hero h2 {
+      font-size: 1.5em; }
+    .hero button {
+      padding: 15px;
+      margin-top: 5vh;
+      font-size: 1.5em; } }
+@media only screen and (min-width: 200px) and (max-width: 439px) {
+  .hero {
+    height: 90vh;
+    min-height: 615px;
+    padding-top: 22vh;
+    background-attachment: scroll; }
+    .hero h1 {
+      font-size: 3.3em;
+      padding-top: 6vh; }
+    .hero h2 {
+      font-size: 1.3em; }
+    .hero button {
+      padding: 15px;
+      margin-top: 5vh;
+      font-size: 1.5em; } }
+.row {
+  padding: 0;
+  margin: 0; }
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+
 .card-row {
   text-align: center;
   padding: 10vh 0 0 0;
-  margin-left: 6vw;
-  margin-right: 5vw; }
+  margin: 0 5vw 0 6vw; }
   .card-row h1 {
     font-family: "Bitter", serif;
     color: #1c2f46;
     font-size: 3.2em; }
   .card-row .card {
-    width: 25vw;
+    width: 280px;
+    height: 330px;
     padding: 26px 35px;
     border: 1px solid #d0d0d0;
-    border-radius: 3px; }
+    border-radius: 3px;
+    margin: 35px 30px 35px 40px; }
     .card-row .card .card-upper {
       margin-top: 24px;
       transition: 0.4s ease; }
@@ -8263,13 +8380,15 @@ button.close {
     margin-bottom: 22px;
     transition: 0.4s ease; }
   .card-row .card:hover .border-container {
-    width: 200px;
+    width: 150px;
     transition: 0.4s ease; }
 
 .why-us {
   height: 910px;
+  min-width: 336px;
   padding-top: 75px;
   margin-top: 10vh;
+  width: 100%;
   background-color: #d8e2ef; }
   .why-us .why-us-content {
     height: 650px;
@@ -8650,15 +8769,86 @@ button.close {
         padding: 0 5px; }
 
 @media only screen and (max-width: 1100px) {
-  .testimonials .speech-row {
-    padding: 0; } }
+  .testimonials {
+    background-attachment: scroll; }
+    .testimonials .speech-row {
+      padding: 0; } }
+@media only screen and (max-width: 399px) {
+  * {
+    overflow: hidden; } }
+@media only screen and (min-width: 1190px) and (max-width: 1270px) {
+  .card-row {
+    margin: 0 5vw 0 3vw; }
+    .card-row .card {
+      margin: 35px 30px 35px 40px; } }
+@media only screen and (min-width: 1070px) and (max-width: 1189px) {
+  .card-row {
+    margin: 0 5vw 0 1vw; }
+    .card-row .card {
+      margin: 35px 30px 35px 35px; } }
+@media only screen and (min-width: 992px) and (max-width: 1069px) {
+  .card-row {
+    margin: 0 5vw 0 0; }
+    .card-row .card {
+      margin: 35px 30px 35px 25px; } }
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+  .card-row .card {
+    width: 480px;
+    height: 500px;
+    padding: 26px 35px;
+    margin: 0 auto;
+    margin-top: 40px; }
+    .card-row .card .card-upper {
+      margin-top: 50px;
+      transition: 0.4s ease; }
+      .card-row .card .card-upper i {
+        font-size: 8em; }
+      .card-row .card .card-upper .card-title {
+        font-size: 2.8em; }
+    .card-row .card .border-container {
+      margin-top: 25px;
+      margin-bottom: 25px; }
+    .card-row .card .card-text {
+      font-size: 1.6em; } }
+@media only screen and (min-width: 390px) and (max-width: 599px) {
+  .card-row .card {
+    width: 320px;
+    height: 400px;
+    padding: 10px 35px;
+    margin: 0 auto;
+    margin-top: 40px; }
+    .card-row .card .card-upper {
+      margin-top: 50px;
+      transition: 0.4s ease; }
+      .card-row .card .card-upper i {
+        font-size: 6em; }
+      .card-row .card .card-upper .card-title {
+        font-size: 2.4em; }
+    .card-row .card .card-text {
+      font-size: 1.2em; } }
+@media only screen and (min-width: 300px) and (max-width: 389px) {
+  .card-row .card {
+    width: 270px;
+    height: 380px;
+    padding: 10px 35px;
+    margin-left: -8px;
+    margin-top: 40px; }
+    .card-row .card .card-upper {
+      margin-top: 50px;
+      transition: 0.4s ease; }
+      .card-row .card .card-upper i {
+        font-size: 4em; }
+      .card-row .card .card-upper .card-title {
+        font-size: 2em; }
+    .card-row .card .card-text {
+      font-size: 1.2em; } }
 @media only screen and (min-width: 1060px) and (max-width: 2600px) {
   .why-us .why-us-content .why-us-inner {
     padding-top: 40px; } }
 @media only screen and (min-width: 556px) and (max-width: 990px) {
   .why-us .why-us-content .why-us-inner {
     padding: 12px 30px 12px 0; } }
-@media only screen and (max-width: 555px) {
+@media only screen and (min-width: 400px) and (max-width: 555px) {
   .why-us .why-us-content .why-us-inner {
     padding: 10px; }
     .why-us .why-us-content .why-us-inner h1 {
@@ -8676,6 +8866,33 @@ button.close {
       padding: 12px;
       margin-top: 18px;
       font-size: 1.3em; } }
+@media only screen and (max-width: 399px) {
+  .why-us {
+    height: 650px;
+    padding-top: 30px; }
+    .why-us .why-us-content {
+      height: 530px;
+      margin-left: -10px; }
+      .why-us .why-us-content .why-us-inner {
+        height: 470px;
+        padding: 0; }
+        .why-us .why-us-content .why-us-inner h1 {
+          font-size: 2em; }
+        .why-us .why-us-content .why-us-inner .icon-column {
+          width: 50px; }
+        .why-us .why-us-content .why-us-inner .icon-ul li {
+          margin-top: 60px;
+          margin-left: 10px; }
+        .why-us .why-us-content .why-us-inner ul li {
+          margin-top: 36px; }
+          .why-us .why-us-content .why-us-inner ul li i {
+            font-size: 2em; }
+          .why-us .why-us-content .why-us-inner ul li h2 {
+            font-size: 1.2em; }
+          .why-us .why-us-content .why-us-inner ul li p {
+            display: none; }
+        .why-us .why-us-content .why-us-inner .button-row button {
+          margin-top: 25px; } }
 @media only screen and (min-width: 2225px) and (max-width: 2500px) {
   .meet-us .meet-us-content {
     padding: 0 10vw 0 16vw; } }
@@ -8980,7 +9197,7 @@ button.close {
       right: 112px; }
   .testimonials .bubble-column .bottom-border-2 {
     width: 220px; } }
-@media only screen and (min-width: 100px) and (max-width: 443px) {
+@media only screen and (min-width: 400px) and (max-width: 443px) {
   .testimonials .bubble-column h2 {
     margin-right: 60px; }
   .testimonials .bubble-column h4 {
@@ -9001,5 +9218,52 @@ button.close {
       right: 90px; }
   .testimonials .bubble-column .bottom-border-2 {
     width: 170px; } }
+@media only screen and (min-width: 100px) and (max-width: 399px) {
+  .speech-row {
+    margin-left: 5px; }
+
+  .bubble-column h2 {
+    display: none; }
+  .bubble-column h4 {
+    display: none; }
+  .bubble-column .woman {
+    display: none; }
+  .bubble-column .speech-bubble {
+    width: 290px;
+    font-size: 1.1em;
+    padding: 10px; }
+    .bubble-column .speech-bubble h3 {
+      font-size: 1.2em;
+      font-weight: bold; }
+    .bubble-column .speech-bubble .open-quote {
+      position: absolute;
+      top: 35px; }
+    .bubble-column .speech-bubble .close-quote {
+      position: absolute;
+      bottom: -23px;
+      right: 115px; }
+  .bubble-column .bottom-border-2 {
+    width: 110px; } }
+@media only screen and (min-width: 100px) and (max-width: 442px) {
+  .footer .quick-links-column ul {
+    display: inline-block;
+    list-style-type: none; }
+    .footer .quick-links-column ul li {
+      padding: 15px;
+      margin-right: -10px; }
+  .footer .contact-us-column ul {
+    font-size: 1em; }
+    .footer .contact-us-column ul li {
+      padding: 15px 0; }
+      .footer .contact-us-column ul li i {
+        margin-right: 0; }
+  .footer .footer-bottom {
+    padding: 0 5vw; }
+    .footer .footer-bottom h2 {
+      display: none; }
+    .footer .footer-bottom h3 i {
+      font-size: 1.1em; }
+    .footer .footer-bottom h3 a {
+      padding: 0 8px; } }
 
 /*# sourceMappingURL=app.css.map */

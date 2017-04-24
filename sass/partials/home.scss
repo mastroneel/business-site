@@ -1,3 +1,17 @@
+// *******
+// GENERAL
+// *******
+
+.row {
+	padding: 0;
+	margin: 0;
+}
+
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+
 // *****
 // CARDS
 // *****
@@ -5,18 +19,19 @@
 .card-row {
 	text-align: center;
 	padding: 10vh 0 0 0;
-	margin-left: 6vw;
-	margin-right: 5vw;
+	margin: 0 5vw 0 6vw;
 	h1 {
 		font-family: $main-font;
 		color: $main-font-color;
 		font-size: 3.2em;
 	}
 	.card {
-		width: 25vw;
+		width: 280px;
+		height: 330px;
 		padding: 26px 35px;
 		border: 1px solid #d0d0d0;
 		border-radius: 3px;
+		margin: 35px 30px 35px 40px;
 		.card-upper {
 			margin-top: 24px;
 			transition: 0.4s ease;
@@ -50,7 +65,7 @@
 			transition: 0.4s ease;
 		}
 		.border-container {
-			width: 200px;
+			width: 150px;
 			transition: 0.4s ease;
 		}
 
@@ -64,8 +79,10 @@
 
 .why-us {
 	height: 910px;
+	min-width: 336px;
 	padding-top: 75px;
 	margin-top: 10vh;
+	width: 100%;
 	background-color: lighten($main-color, 70%);
 	.why-us-content {
 		height: 650px;
@@ -277,7 +294,6 @@
 // ************
 
 .testimonials {
-	
 	background: 
       -webkit-linear-gradient(rgba(37,59,88, 0.6), rgba(37,59,88, 0.6)),
       url("../img/testimonials-1.jpg");
@@ -587,7 +603,6 @@
 
 // BOOTSTRAP DEFAULT SMALL
 @media only screen and (max-width: 768px) {
-	
 
 }
 
@@ -595,6 +610,7 @@
 // BOOTSTRAP DEFAULT MEDIUM
 @media only screen and (max-width: 1100px) {
 	.testimonials {
+		background-attachment: scroll;
 		.speech-row {
 			padding: 0;	
 		}
@@ -606,6 +622,132 @@
 // GROUPED BY SECTION AND
 // WHAT THEY DO
 // ***********************
+
+@media only screen and (max-width: 399px) {
+	* {
+		overflow: hidden;
+	}
+}
+
+// ********************
+// OUR SERVICES SECTION
+// ********************
+
+// ******************************
+// CHANGES MARGINS/SIZE OF CARDS
+// LARGEST TO SMALLEST SCREENS
+// ******************************
+
+@media only screen and (min-width: 1190px) and (max-width: 1270px) {
+	.card-row {
+		margin: 0 5vw 0 3vw;
+		.card {
+			margin: 35px 30px 35px 40px;
+		}
+	}
+}
+
+@media only screen and (min-width: 1070px) and (max-width: 1189px) {
+	.card-row {
+		margin: 0 5vw 0 1vw;
+		.card {
+			margin: 35px 30px 35px 35px;
+		}
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1069px) {
+	.card-row {
+		margin: 0 5vw 0 0;
+		.card {
+			margin: 35px 30px 35px 25px;
+		}
+	}
+}
+
+// Switch from 3 cards per row to 1
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+	.card-row {
+		.card {
+			width: 480px;
+			height: 500px;
+			padding: 26px 35px;
+			margin: 0 auto;
+			margin-top: 40px;
+			.card-upper {
+				margin-top: 50px;
+				transition: 0.4s ease;
+				i {
+					font-size: 8em;
+				}
+				.card-title {
+					font-size: 2.8em;
+				}
+			}
+			.border-container {
+				margin-top: 25px;
+				margin-bottom: 25px;
+			}
+			.card-text {
+				font-size: 1.6em;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 390px) and (max-width: 599px) {
+	.card-row {
+		.card {
+			width: 320px;
+			height: 400px;
+			padding: 10px 35px;
+			margin: 0 auto;
+			margin-top: 40px;
+			.card-upper {
+				margin-top: 50px;
+				transition: 0.4s ease;
+				i {
+					font-size: 6em;
+				}
+				.card-title {
+					font-size: 2.4em;
+				}
+			}
+			.card-text {
+				font-size: 1.2em;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 300px) and (max-width: 389px) {
+	.card-row {
+		.card {
+			width: 270px;
+			height: 380px;
+			padding: 10px 35px;
+			margin-left: -8px;
+			margin-top: 40px;
+			.card-upper {
+				margin-top: 50px;
+				transition: 0.4s ease;
+				i {
+					font-size: 4em;
+				}
+				.card-title {
+					font-size: 2em;
+				}
+			}
+			.card-text {
+				font-size: 1.2em;
+			}
+		}
+	}
+}
+
+
+
+
 
 // *********************
 // WHY CHOOSE US SECTION
@@ -632,7 +774,7 @@
 	}
 }
 
-@media only screen and (max-width: 555px) {
+@media only screen and (min-width: 400px) and (max-width: 555px) {
 	.why-us {
 		.why-us-content {
 			.why-us-inner {
@@ -662,6 +804,52 @@
 						padding: 12px;
 						margin-top: 18px;
 						font-size: 1.3em;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 399px) {
+	.why-us {
+		height: 650px;
+		padding-top: 30px;
+		.why-us-content {
+			height: 530px;
+			margin-left: -10px;
+			.why-us-inner {
+				height: 470px;
+				padding: 0;
+				h1 {
+					font-size: 2em;
+				}
+				.icon-column {
+					width: 50px;
+				}
+				.icon-ul {
+					li {
+						margin-top: 60px;
+						margin-left: 10px;
+					}
+				}
+				ul {
+					li {
+						margin-top: 36px;
+						i {
+							font-size: 2em;
+						}
+						h2 {
+							font-size: 1.2em;
+						}
+						p {
+							display: none;
+						}
+					}
+				}
+				.button-row {
+					button {
+						margin-top: 25px;
 					}
 				}
 			}
@@ -1341,7 +1529,7 @@
 		}	
 }
 
-@media only screen and (min-width: 100px) and (max-width: 443px) {
+@media only screen and (min-width: 400px) and (max-width: 443px) {
 	.testimonials {
 		.bubble-column {
    			h2 {
@@ -1374,6 +1562,92 @@
 		}
 	}
 }
+
+@media only screen and (min-width: 100px) and (max-width: 399px) {
+	.speech-row {
+		margin-left: 5px;
+	}
+	.bubble-column {
+   		h2 {
+   			display: none;
+   		}
+		h4 {
+   			display: none;
+   		}
+   		.woman {
+  			display: none;
+   		}
+   		.speech-bubble {
+			width: 290px;
+			font-size: 1.1em;
+			padding: 10px;
+  			h3 {
+  				font-size: 1.2em;
+  				font-weight: bold;
+  			}
+  			.open-quote {
+  				position: absolute;
+  				top: 35px;
+  			}
+  			.close-quote {
+  				position: absolute;
+				bottom: -23px;
+  				right: 115px;
+  			}
+		}
+		.bottom-border-2 {
+			width: 110px;
+		}
+	}
+}
+
+
+
+// ******
+// FOOTER
+// ******
+
+@media only screen and (min-width: 100px) and (max-width: 442px) {
+	.footer {
+		.quick-links-column {
+			ul {
+				display: inline-block;
+				list-style-type: none;
+					li {
+					padding: 15px;
+					margin-right: -10px;
+				}
+			}
+		}
+		.contact-us-column {
+			ul {
+				font-size: 1em;
+				li {
+					padding: 15px 0;
+					i {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+		.footer-bottom {
+			padding: 0 5vw;
+			h2 {
+				display: none;
+			}
+			h3 {
+				i {
+					font-size: 1.1em;
+				}
+				a {
+					padding: 0 8px;
+				}
+			}
+		}
+	}
+}
+
+
 
 
 
